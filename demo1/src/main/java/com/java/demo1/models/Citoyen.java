@@ -21,4 +21,10 @@ public class Citoyen implements Serializable {
     private String prenom;
     @OneToOne(mappedBy = "citoyen",cascade = CascadeType.ALL)
     private Passeport passeport;
+    
+    public Citoyen()
+    {
+
+    }
+
 }
